@@ -1,0 +1,99 @@
+/*Estructura y colores del menú*/
+
+html, body {
+    margin: 0;
+    background-color: white;
+}
+
+#menu img {
+    margin-top: -20px;
+    width: 150px;
+    height: 150px;
+}
+
+#logo {
+    float: left;
+    text-align: left;
+    width: 17%;
+    margin-left: 3%;
+}
+
+nav {
+    float: right;
+    text-align: right;
+    width: 78%;
+    margin-top: 4px;
+    margin-right: 2%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li{
+    margin-left: 2%;
+    display: inline-block;
+}
+
+
+/*Colores y fuentes para el menú*/
+ul {
+    font:1em 'Helvetica Neue Light';
+    color:rgba(105,104,105,1.00);
+}
+
+ul a {
+    font-size:1.125em;
+    text-decoration:none;
+    color:rgba(166,164,162,1.00);
+}
+/* mouse over link */
+ul a:hover {
+    color:rgba(105,104,105,1.00);
+    text-decoration:none;
+}
+/* selected link */
+ul a:active {
+    color:rgba(114,137,203,1.00);
+}
+
+/*Estructura y colores del countdown*/
+
+h1 {
+    font:35px 'Trajan Pro';
+}
+#transmition p {
+    font: 1em 'Helvetica Neue Light';
+    color: rgba(105, 104, 105, 1.00);
+}
+
+#transmition {
+    background:rgba(203,203,203,1.00);
+    width: 100%;
+    height: 36px;
+    overflow:hidden;
+    text-align: right;
+}
+
+.line {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 2%;
+}
+
+/*Fuentes para textos*/
+
+@font-face {
+    font-family:Trajan Pro;
+    src:url(../fonts/trajan_pro/TrajanPro-Regular.ttf);
+}
+@font-face {
+    font-family:Helvetica Neue Light;
+    src:url(../fonts/helvetica_neue/HelveticaNeue-Light.ttf);
+}
+@font-face {
+    font-family:BankGothicBT Light;
+    src:url(../fonts/BankGothicBT_Light/BankGothicBT_Light.ttf),
+    url(../fonts/BankGothicBT_Light/BankGothicBT_Light.woff),
+    url(../fonts/BankGothicBT_Light/BankGothicBT_Light.svg);
+}
