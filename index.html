@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="starter">
 <head>
     <meta charset="UTF-8">
     <title>Vida Nueva Para el Mundo</title>
@@ -16,12 +16,52 @@
         <div class="container">
             <img src="images/top.jpg" id="welcome">
         </div>
+
+        <div id="events-backgrounds" ng-controller="events">
+            <h1>Eventos</h1>
+            <ul id="events">
+                <li ng-model="eventos" ng-repeat="event in eventos">
+                    <img src="images/events/{{event.img}}">
+                    <p>Nombre: {{event.name}}</p>
+                    <p>Conferencistas: {{event.speakers}}</p>
+                    <p>Lugar: {{event.place}}</p>
+                    <p>Direccion: {{event.location}}</p>
+                    <p>Fecha: {{event.date}}</p>
+                    <a href="{{event.url}}"><p>{{event.name}}L</p></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="app-armando">
+            <div id="app">
+                <h1>APP</h1>
+                <div id="image-app" class="app">
+                    <img src="images/app/app_screen.png">
+                </div>
+                <div id="app-container" class="app">
+                    <p>Con <strong>VNPEM App</strong> siempre estarás informado:<br>
+                        <em>&#8220;Transmisiones en vivo, video y audio conferencias, devocional diario,
+                            información de eventos y más.&#8221;</em><br>
+                        Conoce su nueva imagen y ¡utilízala ya!</p>
+                </div>
+                <div id="video" class="app">
+                    <video width="1280" height="720" id="cmn-video-demo3__video" poster="videos/app.jpg" muted loop >
+                        <source src="videos/app.mp4" type="video/mp4">
+                        <source src="videos/app.ogv" type="video/ogg">
+                        <source src="videos/app.webm" type="video/webm">
+                        <iframe src="https://player.vimeo.com/video/164755641?title=0&byline=0&portrait=0"
+                                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </video>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
 
     </footer>
 
-
+    <script src="js/angular/Factory.js"></script>
+    <script src="js/angular/app.js"></script>
 </body>
 </html>
