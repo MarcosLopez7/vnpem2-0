@@ -59,12 +59,17 @@ html, body {
 
 #app-armando {
     background-color: white;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .app {
-    display: inline-block;
+    text-align: left;
+    float: left;
     height: 280px;
+}
+
+#app {
+    overflow: hidden;
 }
 
 #image-app {
@@ -80,5 +85,115 @@ html, body {
 }
 
 #video {
-    width: 33%;
+    max-width: 33%;
+}
+
+#cmn-video-demo3__controls button {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 15px;
+    background-color: tomato;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#cmn-video-demo3__video{
+    max-width: 100%;
+
+}
+
+#app-container p{
+    margin-left: 6%;
+}
+
+#apps {
+    margin-left: 6%;
+}
+
+#apps img {
+    display: inline-block;
+    width: 150px;
+    margin: 2%;
+}
+
+#armandito {
+    background: url("../images/aam/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+}
+
+#armandito p{
+    font:28px 'BankGothicBT Light';
+    color:rgba(254,254,254,1.00);
+}
+
+#armandito #aam-logo-block {
+    margin: 0;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#armandito #aam-logo-block img{
+    width: 325px;
+    height: 180px;
+}
+
+#armandito #aam-armandito{
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+
+/*Resúmenes*/
+#highlights {
+    padding-top: 40px;
+    background: rgba(54, 102, 200, 1.00);
+
+}
+
+#biggest {
+    display: inline-block;
+    width: 40%;
+    height: 450px;
+    background: url("../images/top.jpg");
+    margin-left: 10%;
+}
+
+#others {
+    display: inline-block;
+    width: 40%;
+    margin-right: 5%;
+    height: 450px;
+}
+
+.highlights{
+    width: 45%;
+    height: 230px;
+    display: inline-block;
+    background: url("../images/top.jpg");
+}
+
+footer iframe{
+    width: 100%;
+    height: 150px;
 }

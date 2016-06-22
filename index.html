@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-sclae=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,7 @@
                     <p>Lugar: {{event.place}}</p>
                     <p>Direccion: {{event.location}}</p>
                     <p>Fecha: {{event.date}}</p>
-                    <a href="{{event.url}}"><p>{{event.name}}L</p></a>
+                    <a href="{{event.url}}"><p>{{event.name}}</p></a>
                 </li>
             </ul>
         </div>
@@ -39,29 +40,66 @@
                     <img src="images/app/app_screen.png">
                 </div>
                 <div id="app-container" class="app">
-                    <p>Con <strong>VNPEM App</strong> siempre estarás informado:<br>
+                    <p>
+                        Con <strong>VNPEM App</strong> siempre estarás informado:<br>
                         <em>&#8220;Transmisiones en vivo, video y audio conferencias, devocional diario,
                             información de eventos y más.&#8221;</em><br>
-                        Conoce su nueva imagen y ¡utilízala ya!</p>
+                        Conoce su nueva imagen y ¡utilízala ya!
+                    </p>
+
+                    <div id="apps">
+                        <img src="images/app/apple.svg">
+                        <img src="images/app/google.png">
+                        <img src="images/app/microsoft.png">
+                        <img src="images/app/amazon.svg">
+                    </div>
                 </div>
                 <div id="video" class="app">
-                    <video width="1280" height="720" id="cmn-video-demo3__video" poster="videos/app.jpg" muted loop >
+                    <video id="cmn-video-demo3__video" poster="videos/app.jpg" muted loop >
                         <source src="videos/app.mp4" type="video/mp4">
                         <source src="videos/app.ogv" type="video/ogg">
                         <source src="videos/app.webm" type="video/webm">
                         <iframe src="https://player.vimeo.com/video/164755641?title=0&byline=0&portrait=0"
                                 frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </video>
+                    <div id="cmn-video-demo3__content">
+                        <div id="cmn-video-demo3__controls">
+                            <button id="cmn-video-demo3__controls--playback">Pausa</button>
+                            <button id="cmn-video-demo3__controls--mute">Sonido</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            
+            <div id="armandito">
+                <div id="aam-logo-block">
+                    <img id="aam-logo" src="images/aam/aam.png">
+                    <p>APASIONADOS POR LA VERDAD</p>
+                </div>
+                <img id="aam-armandito" src="images/aam/armando.png">
+            </div>
+        </div>
+
+        <div id="highlights">
+            <div id="biggest">
+
+            </div>
+            <div id="others">
+                <div class="highlights"></div>
+                <div class="highlights"></div>
+                <div class="highlights"></div>
+                <div class="highlights"></div>
             </div>
         </div>
     </section>
 
     <footer>
-
+        <iframe scrolling="no" frameborder="0" src="iframes/footer.html"></iframe>
     </footer>
 
     <script src="js/angular/Factory.js"></script>
     <script src="js/angular/app.js"></script>
+    <script src="js/jQuery/mute.js"></script>
+    <script src="js/jQuery/parallax.js"></script>
 </body>
 </html>
