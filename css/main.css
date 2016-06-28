@@ -4,13 +4,30 @@ html, body {
 
 /*Cabezera*/
 
-#header {
+header {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100px;
     position: fixed;
-    z-index: 1000000;
+    background: white;
+    z-index: 100000;
 }
 
+header iframe{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header #transmition{
+    height: 36px;
+}
+
+header #menu {
+    height: 64px;
+    margin-top: -4px;
+}
 /*Imágenes de bienvenida*/
 
 #welcome {
@@ -46,9 +63,19 @@ html, body {
 #events li{
     float: left;
     width: 20%;
-    height: 500px;
     margin: 2.5%;
-    background-color: #ffffff;
+}
+
+#events li #event-header{
+    background-color: green;
+    color: white;
+    overflow: hidden;
+    height: 200px;
+    text-align: center;
+}
+
+#events li #full-event {
+    display: none;
 }
 
 #events img{
@@ -166,35 +193,38 @@ html, body {
     padding-top: 40px;
     background: rgba(54, 102, 200, 1.00);
     width: 100%;
-    height: 800px;
+    overflow: auto;
+    padding-bottom: 40px;
 }
 
 #biggest {
     display: inline-block;
-    width: 40%;
-    height: 400px;
+    width: 45%;
+    height: 450px;
     background: url("../images/top.jpg");
     margin-left: 5%;
+    float: left;
+    text-align: left;
 }
 
 #others {
     display: inline-block;
-    width: 40%;
+    width: 45%;
     margin-right: 5%;
-    height: 700px;
+    height: 450px;
+    float: right;
+    text-align: right;
 }
 
 .highlights{
     width: 45%;
-    min-height: 340px;
+    min-height: 230px;
     display: inline-block;
     background: url("../images/top.jpg");
 }
 
 footer {
-    position: absolute;
     width: 100%;
-    z-index: -1231232;
 }
 
 footer iframe{

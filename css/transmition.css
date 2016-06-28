@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    background-color: white;
+    height: 36px;
+}
+
+/*Estructura y colores del countdown*/
+
+h1 {
+    font:35px 'Trajan Pro';
+}
+#transmition p {
+    font: 1em 'Helvetica Neue Light';
+    color: rgba(105, 104, 105, 1.00);
+}
+
+#transmition {
+    background:rgba(203,203,203,1.00);
+    width: 100%;
+    height: 36px;
+    overflow:hidden;
+    text-align: right;
+}
+
+.line {
+    display: inline-block;
+    margin-top: 6px;
+    margin-right: 2%;
+}
+
+/*Fuentes para textos*/
+
+@font-face {
+    font-family:Trajan Pro;
+    src:url(../fonts/trajan_pro/TrajanPro-Regular.ttf);
+}
+@font-face {
+    font-family:Helvetica Neue Light;
+    src:url(../fonts/helvetica_neue/HelveticaNeue-Light.ttf);
+}
+@font-face {
+    font-family:BankGothicBT Light;
+    src:url(../fonts/BankGothicBT_Light/BankGothicBT_Light.ttf),
+    url(../fonts/BankGothicBT_Light/BankGothicBT_Light.woff),
+    url(../fonts/BankGothicBT_Light/BankGothicBT_Light.svg);
+}

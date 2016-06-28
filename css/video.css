@@ -1,10 +1,7 @@
 #app-armando {
-    position: static;
     overflow: hidden;
     width: 100%;
     height: 100%;
-    z-index: -1000;
-    left: 0;
 }
 
 video {
@@ -13,22 +10,17 @@ video {
 
 video {
     min-width: 100%;
-    height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
+    min-height: 100%;
     /*-webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);*/
     background: url(../images/app/app_screen.png) no-repeat;
     background-size: cover;
-    z-index: -1000;
     left: 0;
 }
 
 #app {
-    position: absolute;
     width: 100%;
-    height: 100%;;
-    z-index: 100;
+    height: 100%;
+    left: 0;
     background: rgba(0,0,0,.25);
 }

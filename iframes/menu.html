@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="../js/countdown/jquery.countdown.js"></script>
 </head>
 <body>
-    <div id="transmition">
-        <p class="line">
-            Próxima transmisión en vivo
-        </p>
-        <img src="../images/countdown/aam.png" width="33" height="19" class="line">
-        <p id="getting-started" class="line"></p>
-        <a href="https://www.youtube.com/watch?v=VlxekXlhpnQ" target="_blank" class="line">
-            <img src="../images/countdown/youtube.svg" alt="YouTube"
-                 height="20" onerror="this.onerror=null; this.src='../images/countdown/youtube.png'"/>
-        </a>
-        <a href="https://livestream.com/ArmandoAlducin/eljuiciofinal" target="_blank" class="line">
-            <img src="../images/countdown/livestream.svg" alt="livestream" height="19" onerror="this.onerror=null;
-				 this.src='../images/countdown/livestream.png'"/>
-        </a>
-    </div>
+
     <div id="menu">
         <a href="#" id="logo">
             <img src="../images/menu/logotipo.svg" alt="VNPEM"
@@ -41,12 +25,6 @@
         </nav>
     </div>
 
-    <script>
-        $("#getting-started").countdown("2016/05/28 10:30:00", function(event) {
-            $(this).text(
-                    event.strftime('%D días, %H horas %M minutos %S segundos')
-            );
-        });
-    </script>
+
 </body>
 </html>

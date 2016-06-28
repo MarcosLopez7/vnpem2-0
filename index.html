@@ -11,7 +11,8 @@
 </head>
 <body>
     <header>
-        <iframe id="header" scrolling="no" frameborder="0" src="iframes/menu.html"></iframe>
+        <iframe id="transmition" scrolling="no" frameborder="0" src="iframes/transmition.html"></iframe>
+        <iframe id="menu" scrolling="no" frameborder="0" src="iframes/menu.html"></iframe>
     </header>
 
     <section>
@@ -23,13 +24,17 @@
             <h1>Eventos</h1>
             <ul id="events">
                 <li ng-model="eventos" ng-repeat="event in eventos">
-                    <img src="images/events/{{event.img}}">
-                    <p>Nombre: {{event.name}}</p>
-                    <p>Conferencistas: {{event.speakers}}</p>
-                    <p>Lugar: {{event.place}}</p>
-                    <p>Direccion: {{event.location}}</p>
-                    <p>Fecha: {{event.date}}</p>
-                    <a href="{{event.url}}"><p>{{event.name}}</p></a>
+                    <div id="event-header">
+                        <!--<img src="images/events/{{event.img}}">-->
+                        <p>{{event.name}}</p>
+                        <p>{{event.place}}</p>
+                        <p>{{event.date}}</p>
+                    </div>
+                    <div id="full-event">
+                        <p>Conferencistas: {{event.speakers}}</p>
+                        <p>Direccion: {{event.location}}</p>
+                        <a href="{{event.url}}"><p>{{event.name}}</p></a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -41,8 +46,6 @@
             </div>
             <img id="aam-armandito" src="images/aam/armando.png">
         </div>
-
-
 
         <div id="highlights">
             <div id="biggest">
@@ -81,5 +84,6 @@
     <script src="js/angular/app.js"></script>
     <script src="js/jQuery/mute.js"></script>
     <script src="js/jQuery/parallax.js"></script>
+    <script src="js/jQuery/effects.js"></script>
 </body>
 </html>
