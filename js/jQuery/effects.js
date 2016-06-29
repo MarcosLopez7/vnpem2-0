@@ -2,6 +2,8 @@
  * Created by marcoslopez7 on 24/06/16.
  */
 
+
+/*Efecto para el menú*/
 $(window).scroll(function () {
     var $scrollPosition = $(window).scrollTop();
     var $header = $('header');
@@ -18,6 +20,7 @@ $(window).scroll(function () {
 });
 
 
+/*Efecto para los resúmenes*/
 $('#biggest').hover(function(){
     $(this).css("color", "white");
 }, function () {

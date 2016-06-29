@@ -6,5 +6,7 @@
 
     app.controller('events', function ($scope, Factory) {
         $scope.eventos = Factory.data();
+        $scope.showEvents = false;
+        
     });
 }());

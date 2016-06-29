@@ -66,7 +66,7 @@ header #menu {
     margin: 2.5%;
 }
 
-#events li #event-header{
+#events li .event-header{
     background-color: green;
     color: white;
     overflow: hidden;
@@ -74,8 +74,9 @@ header #menu {
     text-align: center;
 }
 
-#events li #full-event {
-    display: none;
+#events li .full-event {
+    margin-top: -16px;
+    background-color: white;
 }
 
 #events img{

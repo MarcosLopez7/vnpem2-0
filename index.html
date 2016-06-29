@@ -23,14 +23,15 @@
         <div id="events-backgrounds" ng-controller="events">
             <h1>Eventos</h1>
             <ul id="events">
-                <li ng-model="eventos" ng-repeat="event in eventos">
-                    <div id="event-header">
+                <li ng-model="eventos" ng-repeat="event in eventos" ng-mouseover="showEvents = true"
+                    ng-mouseleave="showEvents = false">
+                    <div class="event-header">
                         <!--<img src="images/events/{{event.img}}">-->
                         <p>{{event.name}}</p>
                         <p>{{event.place}}</p>
                         <p>{{event.date}}</p>
                     </div>
-                    <div id="full-event">
+                    <div class="full-event" ng-show="showEvents">
                         <p>Conferencistas: {{event.speakers}}</p>
                         <p>Direccion: {{event.location}}</p>
                         <a href="{{event.url}}"><p>{{event.name}}</p></a>
