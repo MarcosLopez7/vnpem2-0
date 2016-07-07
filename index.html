@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Vida Nueva Para el Mundo</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/video.css">
-    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/effects.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+
 </head>
 <body>
     <header>
@@ -25,17 +26,19 @@
             <ul id="events">
                 <li ng-model="eventos" ng-repeat="event in eventos" ng-mouseover="showEvents = true"
                     ng-mouseleave="showEvents = false">
-                    <div class="event-header">
-                        <!--<img src="images/events/{{event.img}}">-->
-                        <p>{{event.name}}</p>
-                        <p>{{event.place}}</p>
-                        <p>{{event.date}}</p>
-                    </div>
-                    <div class="full-event" ng-show="showEvents">
-                        <p>Conferencistas: {{event.speakers}}</p>
-                        <p>Direccion: {{event.location}}</p>
-                        <a href="{{event.url}}"><p>{{event.name}}</p></a>
-                    </div>
+                    <a href="{{event.url}}">
+                        <div class="event-header">
+                            <!--<img src="images/events/{{event.img}}">-->
+                            <p>{{event.name}}</p>
+                            <p>{{event.place}}</p>
+                            <p>{{event.date}}</p>
+                        </div>
+                        <div class="full-event" ng-show="showEvents">
+                            <p>Conferencistas: {{event.speakers}}</p>
+                            <p>Direccion: {{event.location}}</p>
+
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -62,18 +65,6 @@
 
         <div id="app-armando">
 
-            <video id="cmn-video-demo3__video" poster="videos/app.jpg" muted loop autoplay>
-                <source src="videos/app.mp4" type="video/mp4">
-                <source src="videos/app.ogv" type="video/ogg">
-                <source src="videos/app.webm" type="video/webm">
-
-                <iframe src="https://player.vimeo.com/video/164755641?title=0&byline=0&portrait=0"
-                            frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </video>
-
-            <div id="app">
-
-            </div>
         </div>
     </section>
 
@@ -83,7 +74,6 @@
 
     <script src="js/angular/Factory.js"></script>
     <script src="js/angular/app.js"></script>
-    <script src="js/jQuery/mute.js"></script>
     <script src="js/jQuery/parallax.js"></script>
     <script src="js/jQuery/effects.js"></script>
 </body>

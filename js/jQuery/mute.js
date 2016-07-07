@@ -6,10 +6,25 @@
  */
 $('document').ready(function () {
 
+    function movingOverlay ($video, $overlay) {
+        var videoPosition = $video.position().top;
+        $overlay.css("top", videoPosition + "px");
+        $overlay.css("height", $video.height() + "px");
+    }
+
     // cache vars
     var cmn_video = document.getElementById("cmn-video-demo3__video"),
         cmn_playback = document.getElementById("cmn-video-demo3__controls--playback"),
         cmn_mute = document.getElementById("cmn-video-demo3__controls--mute");
+
+    var $video = $("#cmn-video-demo3__video");
+    var $overlay = $("#overlay");
+
+    movingOverlay($video, $overlay);
+
+    $(window).resize(function () {
+        movingOverlay($video, $overlay);
+    });
 
     // listen for playback
     cmn_playback.addEventListener( "click", function(e) {
@@ -46,4 +61,5 @@ $('document').ready(function () {
         }
       })
     });
+
 });

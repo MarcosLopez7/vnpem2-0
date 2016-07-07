@@ -18,9 +18,41 @@ video {
     left: 0;
 }
 
-#app {
+#overlay {
     width: 100%;
     height: 100%;
     left: 0;
-    background: rgba(0,0,0,.25);
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,200,.25);
+}
+
+#overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+}
+
+#overlay-content button {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 15px;
+    background-color: tomato;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
